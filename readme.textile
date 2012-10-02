@@ -1,12 +1,14 @@
 h2. toggleLocation for Mac OSX 10.8.x (w/ Notification Center Support)
 
-h3. Instalation Instruction
+h3. Installation Instruction
 
 1. Clone the repository
 @# git clone git://github.com/danema/toggleLocation.git ~/.toggleLocation@
 
 2. Move required Scripts to the appropriate locations
 @# rsync -ave ssh ~/.toggleLocation/Scripts/toggleLocation.sh ~/Scripts/; rsync -ave ssh ~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist ~/Library/LaunchAgents/@
+
+3. *Change [username] in* @~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist@ *to match yours*
 
 3. Set the correct permissions
 @# chmod 755 ~/Scripts/toggleLocation.sh@
