@@ -10,14 +10,14 @@ h3. Installation Instruction
 
 3. *Change [username] in* @~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist@ *to match yours*
 
-3. Set the correct permissions
+4. Set the correct permissions
 @# chmod 755 ~/Scripts/toggleLocation.sh@
 
-4. Install terminal-notifier by https://github.com/alloy/terminal-notifier to push the Status to Notification Center
+5. Install terminal-notifier by https://github.com/alloy/terminal-notifier to push the Status to Notification Center
 @# sudo gem install terminal-notifier@
 
-5. Edit Locations in System Preferences Network pane, Duplicate the Location, rename 'Automatic Copy' to 'Ethernet' and remove the 'Wi-Fi'-adapter from the 'Ethernet'-location.
+6. Edit Locations in System Preferences Network pane, Duplicate the Location, rename 'Automatic Copy' to 'Ethernet' and remove the 'Wi-Fi'-adapter from the 'Ethernet'-location.
 !https://raw.github.com/danema/toggleLocation/master/instructions.png!
 
-6. Launch the agent to start detecting changes to the Network
+7. Launch the agent to start detecting changes to the Network
 @# launchctl load com.davidanema.toggleLocation.plist@
