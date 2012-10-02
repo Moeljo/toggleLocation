@@ -15,7 +15,7 @@ h3. Instalation Instruction
 @# sudo gem install terminal-notifier@
 
 5. Edit Locations in System Preferences Network pane, Duplicate the Location, rename 'Automatic Copy' to 'Ethernet' and remove the 'Wi-Fi'-adapter from the 'Ethernet'-location.
-!https://raw.github.com/danema/toggleLocation/master/readme.png!
+!https://raw.github.com/danema/toggleLocation/master/instructions.png!
 
 6. Launch the agent to start detecting changes to the Network
 @# launchctl load com.davidanema.toggleLocation.plist@
