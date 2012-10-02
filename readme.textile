@@ -1,6 +1,21 @@
-h2. toggleLocation for Mac OSX 10.8.x (w/ Notification Centre Support)
+h2. toggleLocation for Mac OSX 10.8.x (w/ Notification Center Support)
 
 h3. Instalation Instruction
 
 1. Clone the repository
 @# git clone git://github.com/danema/toggleLocation.git ~/.toggleLocation@
+
+2. Move required Scripts to the appropriate locations
+@# rsync -ave ssh ~/.toggleLocation/Scripts/toggleLocation.sh ~/Scripts/; rsync -ave ssh ~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist ~/Library/LaunchAgents/@
+
+3. Set the correct permissions
+@# chmod 755 ~/Scripts/toggleLocation.sh@
+
+4. Install terminal-notifier by https://github.com/alloy/terminal-notifier to push the Status to Notification Center
+@# sudo gem install terminal-notifier@
+
+5. Edit Locations in System Preferences Network pane, Duplicate the Location, rename 'Automatic Copy' to 'Ethernet' and remove the 'Wi-Fi'-adapter from the 'Ethernet'-location.
+!https://github.com/danema/toggleLocation/blob/master/readme.png!
+
+6. Launch the agent to start detecting changes to the Network
+@# launchctl load com.davidanema.toggleLocation.plist@
