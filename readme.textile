@@ -8,7 +8,7 @@ h3. Installation Instruction
 2. Move required Scripts to the appropriate locations
 @# rsync -ave ssh ~/.toggleLocation/Scripts/toggleLocation.sh ~/Scripts/; rsync -ave ssh ~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist ~/Library/LaunchAgents/@
 
-3. *Change [username] in* @~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist@ *to match yours*
+3. Change [username] in @~/.toggleLocation/Library/LaunchAgents/com.davidanema.toggleLocation.plist@ to match yours
 
 4. Set the correct permissions
 @# chmod 755 ~/Scripts/toggleLocation.sh@
